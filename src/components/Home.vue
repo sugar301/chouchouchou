@@ -71,11 +71,13 @@
 	}
 
 	function chou() {
+		if(myArray.length===0){
+			return
+		}
 		stopCount();
 		count.value = -1
-		isActive.value = Math.floor(Math.random() * (myArray.length * 3)); //重复轮次 如一共50个 则随机到150 但是实际上下标只到149，多的一个看缘分吧
+		isActive.value = Math.floor(Math.random() * (myArray.length * 3)); //重复轮次 如一共50个 则随机到150 
 		startCount();
-
 
 	}
 
